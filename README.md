@@ -15,7 +15,7 @@ $gladdress = new Gladdress('046632BC-8B3A-485D-8213-9527132C97C9');
 Request Properties
 
 ```
-$gladdress->get('FirstName')
+$gladdress->get('FirstName');
 ```
 
 See test.php for a test implementation.
