@@ -14,8 +14,18 @@ if(isset($_GET['gladid']))
     <input type="submit">
 </form>
 
-<? if ($gladdress != null) : ?>
+<? if ($gladdress =! null) : ?>
+
+    <ul>
+    <?php foreach($gladdress->getFields() as $field) : ?>
+        <li>
+            <?= $field ?>
+        </li>
+    <?php endforeach ?>
+    </ul>
+
     <p>
         <strong>FirstName LastName: </strong><?= $gladdress->get('FirstName') ?> <?= $gladdress->get('LastName') ?>
     </p>
+
 <? endif ?>

@@ -39,6 +39,15 @@ class GladdressProfile
         return $this->profile[$field];
     }
 
+    /**
+     * Returns an array of available fields for this profile
+     * @return array
+     */
+    public function getFields()
+    {
+        return array_keys($this->profile);
+    }
+
     private function isGuid($guid)
     {
         return preg_match('/^\{?[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}\}?$/', $guid);
