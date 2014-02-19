@@ -1,5 +1,5 @@
 <?php
-class Gladdress
+class GladdressProfile
 {
     private $profile;
 
