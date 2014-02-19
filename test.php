@@ -4,7 +4,7 @@ include 'gladdress.php';
 
 if(isset($_GET['gladid']))
 {
-    $gladdress = new Gladdress(urlencode($_GET['gladid']));
+    $gladdress = new GladdressProfile(urlencode($_GET['gladid']));
 }
 
 ?>
