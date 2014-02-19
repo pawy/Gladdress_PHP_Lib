@@ -13,6 +13,7 @@ $gladdressProfile = new GladdressProfile('046632BC-8B3A-485D-8213-9527132C97C9')
 ```
 
 Request available fields of the profile
+
 See http://gladdress.com/Documentation/Fields for a complete list of available fields
 
 ```
