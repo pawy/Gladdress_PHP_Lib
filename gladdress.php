@@ -13,7 +13,7 @@ class GladdressProfile
         if(!$this->isGuid($gladId))
             throw new Exception("Given GladId is invalid (not a valid GUID)");
 
-        $request = 'http://gladdress.com/' . urlencode( $gladId) . '.php';
+        $request = 'https://gladdress.azurewebsites.net/' . urlencode( $gladId) . '.php';
         $response  = $this->UrlGetContents($request);
         try
         {
